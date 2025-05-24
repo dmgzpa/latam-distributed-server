@@ -1,0 +1,22 @@
+{
+    "nodo_mx": {
+        "activo": true,
+        "ultima_actualizacion": "2025-05-24 16:44:43"
+    },
+    "nodo_co": {
+        "activo": true,
+        "ultima_actualizacion": "2025-05-24 16:44:43"
+    },
+    "nodo_pe": {
+        "activo": true,
+        "ultima_actualizacion": "2025-05-24 16:44:43"
+    },
+    "nodo_cl": {
+        "activo": false,
+        "ultima_actualizacion": "2025-05-24 16:44:43"
+    },
+    "nodo_ar": {
+        "activo": true,
+        "ultima_actualizacion": "2025-05-24 16:44:43"
+    }
+}

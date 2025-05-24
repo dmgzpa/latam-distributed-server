@@ -1,0 +1,73 @@
+2025-05-24 08:39:26.584387: Imagen test.png enviada a nodo_mx
+[INFO] 2025-05-24T08:48:23.412193 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T08:49:22.730292 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T08:52:54.418208 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T08:54:02.358290 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T08:55:40.625512 - Imagen 'test.png' enviada a nodo_pe
+[INFO] 2025-05-24T09:00:45.585567 - Imagen 'test.png' enviada a nodo_pe
+[INFO] 2025-05-24T09:02:41.650436 - Imagen 'test.png' enviada a nodo_cl
+[ERROR] 2025-05-24T09:05:33.360911 - No hay nodos activos disponibles
+[INFO] 2025-05-24T09:07:20.196500 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T09:25:15.047540 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T09:26:47.590325 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T09:58:29.578069 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T09:58:55.351887 - Imagen 'dm5a_53o7_210409.jpg' enviada a nodo_ar
+[INFO] 2025-05-24T10:08:56.124418 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T10:11:25.154021 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T10:21:00.111431 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T10:23:55.582790 - Imagen 'test.png' enviada a nodo_cl
+[INFO] 2025-05-24T10:50:44.664778 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T10:53:47.561966 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T10:58:23.010365 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T11:26:20.254172 - Imagen 'test.png' enviada a nodo_ar
+[2025-05-24 11:42:32] NODO RECUPERADO: nodo_mx
+[2025-05-24 11:42:34] NODO RECUPERADO: nodo_co
+[2025-05-24 11:42:36] NODO RECUPERADO: nodo_pe
+[2025-05-24 11:42:38] NODO RECUPERADO: nodo_cl
+[2025-05-24 11:42:40] NODO RECUPERADO: nodo_ar
+[2025-05-24 11:43:08] NODO INACTIVO (sin respuesta): nodo_pe
+[2025-05-24 15:13:50] NODO RECUPERADO: nodo_mx
+[2025-05-24 15:13:52] NODO RECUPERADO: nodo_co
+[2025-05-24 15:13:54] NODO RECUPERADO: nodo_pe
+[2025-05-24 15:13:56] NODO RECUPERADO: nodo_cl
+[2025-05-24 15:13:58] NODO RECUPERADO: nodo_ar
+[INFO] 2025-05-24T15:14:41.913466 - Imagen 'test.png' enviada a nodo_mx
+[2025-05-24 15:15:13] NODO INACTIVO (sin respuesta): nodo_cl
+[2025-05-24 15:16:50] NODO INACTIVO (sin respuesta): nodo_mx
+[ERROR] 2025-05-24T15:16:50.828278 - FALLO conexión con nodo_mx: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /subir (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023BB23EE8B0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))
+[INFO] 2025-05-24T15:16:52.876381 - Imagen 'test.png' enviada a nodo_co
+[2025-05-24 15:17:45] NODO RECUPERADO: nodo_mx
+[INFO] 2025-05-24T15:17:58.264941 - Imagen 'test.png' enviada a nodo_mx
+[2025-05-24 15:25:31] NODO INACTIVO (sin respuesta): nodo_co
+[INFO] 2025-05-24T15:37:49.887089 - Imagen 'test.png' enviada a nodo_mx
+[2025-05-24 15:38:12] NODO INACTIVO (sin respuesta): nodo_mx
+[2025-05-24 15:38:31] NODO RECUPERADO: nodo_mx
+[ERROR] 2025-05-24 15:49:19 - NODO INACTIVO (sin respuesta): nodo_co
+[INFO] 2025-05-24T15:49:58.824060 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24 15:50:38 - NODO RECUPERADO: nodo_co
+[INFO] 2025-05-24T16:11:52.850727 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T16:12:02.923248 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T16:12:18.899161 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T16:12:27.820150 - Imagen 'test.png' enviada a nodo_cl
+[INFO] 2025-05-24T16:12:34.469493 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T16:12:41.247190 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T16:12:49.405829 - Imagen 'test.png' enviada a nodo_pe
+[ERROR] 2025-05-24 16:14:07 - NODO INACTIVO (sin respuesta): nodo_ar
+[INFO] 2025-05-24T16:14:34.828525 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T16:14:46.531925 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24T16:14:55.945649 - Imagen 'test.png' enviada a nodo_pe
+[INFO] 2025-05-24T16:15:01.312976 - Imagen 'test.png' enviada a nodo_cl
+[INFO] 2025-05-24T16:15:06.920479 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T16:15:25.434252 - Imagen 'test.png' enviada a nodo_mx
+[INFO] 2025-05-24 16:17:34 - NODO RECUPERADO: nodo_ar
+[INFO] 2025-05-24T16:24:00.191413 - Imagen 'dm5a_53o7_210409.jpg' enviada a nodo_mx
+[INFO] 2025-05-24T16:24:33.922437 - Imagen 'dm5a_53o7_210409.jpg' enviada a nodo_mx
+[INFO] 2025-05-24T16:24:40.177958 - Imagen 'dm5a_53o7_210409.jpg' enviada a nodo_mx
+[INFO] 2025-05-24T16:24:55.079156 - Imagen 'dm5a_53o7_210409.jpg' enviada a nodo_co
+[ERROR] 2025-05-24 16:26:44 - NODO INACTIVO (sin respuesta): nodo_cl
+[ERROR] 2025-05-24 16:26:54 - NODO INACTIVO (sin respuesta): nodo_mx
+[INFO] 2025-05-24T16:27:56.492935 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24T16:28:09.396227 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T16:28:16.776955 - Imagen 'test.png' enviada a nodo_pe
+[INFO] 2025-05-24T16:28:22.077735 - Imagen 'test.png' enviada a nodo_ar
+[INFO] 2025-05-24 16:28:58 - NODO RECUPERADO: nodo_mx

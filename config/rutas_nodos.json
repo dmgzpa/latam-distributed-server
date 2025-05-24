@@ -1,0 +1,33 @@
+{
+  "cliente": {
+    "nodo_mx": 2,
+    "nodo_co": 3,
+    "nodo_pe": 5,
+    "nodo_cl": 7,
+    "nodo_ar": 9
+  },
+  "nodo_mx": {
+    "nodo_co": 2,
+    "nodo_pe": 4
+  },
+  "nodo_co": {
+    "nodo_mx": 2,
+    "nodo_pe": 2,
+    "nodo_cl": 4
+  },
+  "nodo_pe": {
+    "nodo_mx": 4,
+    "nodo_co": 2,
+    "nodo_cl": 2,
+    "nodo_ar": 3
+  },
+  "nodo_cl": {
+    "nodo_co": 4,
+    "nodo_pe": 2,
+    "nodo_ar": 2
+  },
+  "nodo_ar": {
+    "nodo_pe": 3,
+    "nodo_cl": 2
+  }
+}

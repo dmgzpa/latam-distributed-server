@@ -1,0 +1,38 @@
+REPORTE DEL SISTEMA DISTRIBUIDO
+Generado el: 2025-05-24 16:29:16
+
+📦 IMÁGENES ENVIADAS POR NODO:
+ - nodo_mx: 17 imágenes
+ - nodo_co: 10 imágenes
+ - nodo_pe: 5 imágenes
+ - nodo_cl: 4 imágenes
+ - nodo_ar: 11 imágenes
+
+❌ FALLOS DETECTADOS POR NODO:
+ - nodo_mx: 1 fallos
+
+🔁 NODOS RECUPERADOS:
+ - nodo_mx: 5 veces volvió a estar activo
+ - nodo_co: 3 veces volvió a estar activo
+ - nodo_pe: 2 veces volvió a estar activo
+ - nodo_cl: 2 veces volvió a estar activo
+ - nodo_ar: 3 veces volvió a estar activo
+
+📚 OTROS EVENTOS (últimos 10):
+ - [ERROR] 2025-05-24T09:05:33.360911 - No hay nodos activos disponibles
+ - [2025-05-24 11:43:08] NODO INACTIVO (sin respuesta): nodo_pe
+ - [2025-05-24 15:15:13] NODO INACTIVO (sin respuesta): nodo_cl
+ - [2025-05-24 15:16:50] NODO INACTIVO (sin respuesta): nodo_mx
+ - [2025-05-24 15:25:31] NODO INACTIVO (sin respuesta): nodo_co
+ - [2025-05-24 15:38:12] NODO INACTIVO (sin respuesta): nodo_mx
+ - [ERROR] 2025-05-24 15:49:19 - NODO INACTIVO (sin respuesta): nodo_co
+ - [ERROR] 2025-05-24 16:14:07 - NODO INACTIVO (sin respuesta): nodo_ar
+ - [ERROR] 2025-05-24 16:26:44 - NODO INACTIVO (sin respuesta): nodo_cl
+ - [ERROR] 2025-05-24 16:26:54 - NODO INACTIVO (sin respuesta): nodo_mx
+
+ ESTADO ACTUAL DE LOS NODOS (estado_nodos.json):
+ - nodo_mx: ACTIVO (última actualización: 2025-05-24 16:29:09)
+ - nodo_co: ACTIVO (última actualización: 2025-05-24 16:29:09)
+ - nodo_pe: ACTIVO (última actualización: 2025-05-24 16:29:09)
+ - nodo_cl: INACTIVO (última actualización: 2025-05-24 16:29:09)
+ - nodo_ar: ACTIVO (última actualización: 2025-05-24 16:29:09)
