@@ -1,3 +1,7 @@
-flask
-requests
-tk
+Necesitas instalar estas librerías para que el código funcione correctamente. Puedes hacerlo ejecutando el siguiente comando en tu terminal:
+pip install -r requirements.txt
+
+pip install flask
+pip install requests
+pip install tk
+pip install pillow

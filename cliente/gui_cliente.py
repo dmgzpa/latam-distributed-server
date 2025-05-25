@@ -7,7 +7,7 @@ import json
 import subprocess
 import platform
 
-BALANCEADOR_URL = "http://localhost:8000/subir"
+BALANCEADOR_URL = "http://<IP_SERVIDOR>:8000/subir"
 
 class AppCliente:
     def __init__(self, root):
@@ -64,6 +64,8 @@ class AppCliente:
         self.imagen_tk = None
 
         self.cargar_historial()
+        self.refrescar_historial()
+
 
     def cargar_imagen(self):
         archivo = filedialog.askopenfilename(
@@ -84,40 +86,54 @@ class AppCliente:
     def subir_imagen(self):
         if not self.ruta_imagen:
             return
-        try:
-            with open(self.ruta_imagen, 'rb') as f:
-                files = {'imagen': f}
-                response = requests.post(BALANCEADOR_URL, files=files)
-                filename = os.path.basename(self.ruta_imagen)
 
-                if response.status_code == 200:
-                    msg = response.json().get("mensaje", "")
-                    nodo = msg.split("nodo")[-1].strip()
-                    self.tree.insert("", tk.END, values=(filename, nodo, "✔ OK"))
-                    self.mensaje.config(text=msg, fg="green")
-                    self.guardar_en_historial(filename, nodo, "OK")
-                else:
-                    error = response.json().get("error", "Error")
-                    self.tree.insert("", tk.END, values=(filename, "-", "❌ ERROR"))
-                    self.mensaje.config(text=error, fg="red")
-                    self.guardar_en_historial(filename, "-", "ERROR")
-        except Exception:
-            nombre = os.path.basename(self.ruta_imagen)
-            self.tree.insert("", tk.END, values=(nombre, "-", "❌ CONEXIÓN"))
-            self.mensaje.config(text="Error de conexión con el servidor", fg="red")
-            self.guardar_en_historial(nombre, "-", "CONEXIÓN")
+        filename = os.path.basename(self.ruta_imagen)
+
+        if not filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+            messagebox.showerror("Error", "Formato no válido. Solo se permiten .png, .jpg, .jpeg")
+            return
+
+
+        try:
+            files = {'imagen': open(self.ruta_imagen, 'rb')}
+            response = requests.post(BALANCEADOR_URL, files=files)
+            files['imagen'].close()
+
+            if response.status_code == 200:
+                msg = response.json().get("mensaje", "")
+                nodo = msg.split("nodo")[-1].strip()
+                self.tree.insert("", tk.END, values=(filename, nodo, "✔ OK"))
+                self.mensaje.config(text=msg, fg="green")
+                self.guardar_en_historial(filename, nodo, "OK")
+            else:
+                error = response.json().get("error", "Error")
+                self.tree.insert("", tk.END, values=(filename, "-", "❌ ERROR"))
+                self.mensaje.config(text=error, fg="red")
+                self.guardar_en_historial(filename, "-", "ERROR")
+        except Exception as e:
+            self.tree.insert("", tk.END, values=(filename, "-", "❌ CONEXIÓN"))
+            self.mensaje.config(text=f"Error de conexión: {str(e)}", fg="red")
+            self.guardar_en_historial(filename, "-", "CONEXIÓN")
+
 
     def guardar_en_historial(self, nombre, nodo, estado):
         with open(self.archivo_historial, 'a', encoding='utf-8') as f:
             f.write(f"{nombre} | {nodo} | {estado}\n")
 
     def cargar_historial(self):
-        if os.path.exists(self.archivo_historial):
-            with open(self.archivo_historial, 'r', encoding='utf-8') as f:
-                for linea in f:
-                    partes = [p.strip() for p in linea.strip().split("|")]
-                    if len(partes) == 3:
-                        self.tree.insert("", tk.END, values=(partes[0], partes[1], partes[2]))
+        if not os.path.exists(self.archivo_historial):
+            return
+
+        # Para evitar duplicados en la tabla visual
+        existentes = set()
+        for fila in self.tree.get_children():
+            existentes.add(self.tree.item(fila)["values"][0])  # nombre del archivo
+
+        with open(self.archivo_historial, 'r', encoding='utf-8') as f:
+            for linea in f:
+                partes = [p.strip() for p in linea.strip().split("|")]
+                if len(partes) == 3 and partes[0] not in existentes:
+                    self.tree.insert("", tk.END, values=(partes[0], partes[1], partes[2]))
 
     def abrir_ventana_nodos(self):
         top = tk.Toplevel(self.root)
@@ -257,7 +273,10 @@ class AppCliente:
         except Exception as e:
             messagebox.showerror("Error", f"No se pudo guardar el modo: {str(e)}")
 
-
+    def refrescar_historial(self):
+        self.cargar_historial()
+        self.root.after(5000, self.refrescar_historial)  # 5000 ms = 5 segundos
+      
 if __name__ == "__main__":
     root = tk.Tk()
     app = AppCliente(root)

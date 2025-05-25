@@ -71,3 +71,6 @@
 [INFO] 2025-05-24T16:28:16.776955 - Imagen 'test.png' enviada a nodo_pe
 [INFO] 2025-05-24T16:28:22.077735 - Imagen 'test.png' enviada a nodo_ar
 [INFO] 2025-05-24 16:28:58 - NODO RECUPERADO: nodo_mx
+[INFO] 2025-05-24T17:39:38.708608 - Imagen 'test_cliente.png' enviada a nodo_cl
+[INFO] 2025-05-24T17:40:41.060950 - Imagen 'test.png' enviada a nodo_co
+[INFO] 2025-05-24T17:41:07.934525 - Imagen 'test_cliente.png' enviada a nodo_mx
